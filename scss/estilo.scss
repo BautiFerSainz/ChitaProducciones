@@ -1,0 +1,223 @@
+@import"_variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    color: $FuenteColor;
+    font-family: $Fuente;
+
+}
+/* Comienzo Header */
+header{
+    display: flex;
+    background-color: $ColorFondo;
+    height: auto;
+    justify-content: space-between;
+    flex-direction: row;
+
+        #LogoHeader{
+            width: 100px;
+            height: 100px;
+            justify-self: left;    
+            transition: 0.3s;
+        }
+        #LogoHeader:hover{
+            transform: scale(110%);
+        }
+}
+/* Fin Header */
+
+/* Comeinzo Main */
+main{
+    background-color: $ColorFondo;
+    height: auto;
+    width: 100%;
+    position: relative;
+        img{
+            display: block;
+            margin: auto;
+            align-content: center;
+        }
+        #IndexLista{
+            font-size: 20px;
+            position: relative;
+            text-align: center;
+            list-style: none;
+            margin-top: 50px;
+            margin: auto;
+        }
+        li{
+            color: $FuenteColor;
+            margin-top: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+}
+/* Fin Main */
+
+/* Comienzo Main (Nuestros trabajos) */
+.GrillaTrabajos{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:    ". siriusPrincipal siriusPrincipal ."
+                            "Birra Trago Comida CartelFuera";
+    justify-items: center;
+    column-gap: 5px;
+    row-gap: 15px   ;
+    background-color: $ColorFondo;
+    
+    #Grilla{
+        width: 100%;
+        height: auto;
+        border: solid 2px white;
+    }
+    .Birra{
+        grid-area: Birra;
+    }
+    .CartelDentro{
+        grid-area: siriusPrincipal;
+    }
+    .CartelFuera{
+        grid-area: CartelFuera;
+    }
+    .Comida{
+        grid-area: Comida;
+    }
+    .Trago{
+        grid-area: Trago;
+    }
+    .Birra:hover, .CartelDentro:hover, .CartelFuera:hover, .Comida:hover, .Trago:hover{
+        transform: scale(110%);
+        transition: 0.5s;
+    }
+}
+/* Fin Main (Nuestros trabajos) */
+
+/* Comienzo Main (Servicios) */
+li{
+    color: $FuenteColor;
+    text-align: center;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    font-size: 15px;
+}
+/* Fin Main (Servicios) */
+
+/* Comienzo Main (Sobre Nosotros) */
+
+th{
+    color:$FuenteColor;
+    text-align: center;
+}
+td{
+    text-align: center;
+    color:$FuenteColor;
+}
+#Fotografo{
+    height: 400px;
+    width: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+table{
+    margin: auto;
+    align-content: center;
+}
+p{ 
+    margin: 0 !important;
+}
+/* Fin Main (Sobre Nosotros) */
+
+/* Comienzo Main (Contactanos) */
+form{
+    text-align: center;
+    margin: auto;
+}
+textarea{
+    background-color: $ColorFondo;
+    border: solid 2px $FuenteColor;
+    color: $FuenteColor;
+ }
+ fieldset{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: $FuenteColor;
+    border: solid 2px $FuenteColor;
+
+}
+select{
+    color: $FuenteColor;
+    background-color: $ColorFondo;
+    border: solid 2px $FuenteColor;
+}
+input{
+    color: $FuenteColor;
+}
+#Contraseña, #Nombre, #enviar, #reset{
+    color: $FuenteColor;
+    background-color: $ColorFondo;
+    border: solid 2px $FuenteColor;   
+}
+
+
+
+/* Comeinzo Footer */
+
+footer{
+    background-color: $ColorFondo;
+    height: 150px;
+}
+/* Fin Footer */
+
+
+/* Comienzo BEM */
+.Texto{
+    &--XS{
+        font-size: 5px
+    }
+    &--S{
+        font-size: 15px;
+    }
+    &--M{
+        font-size: 20px;
+    }
+    &--L{
+        font-size: 30px;
+    }
+    &--XL{
+        font-size: 40px;
+    }
+    &--XXL{
+        font-size: 50px;
+    }
+}
+.Texto{
+    &--Center{
+        text-align: center;
+    }
+    &--End{
+        text-align: end;
+    }
+    &--Start{
+        text-align: start;
+    }
+}
+.Texto{
+    &--NoDec{
+        text-decoration: none;
+    }
+    &--ColorFuente{
+        color: $FuenteColor;
+    }
+}
+
+

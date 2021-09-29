@@ -1,0 +1,182 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Bebas Neue", cursive; }
+
+/* Comienzo Header */
+header {
+  display: flex;
+  background-color: black;
+  height: auto;
+  justify-content: space-between;
+  flex-direction: row; }
+  header #LogoHeader {
+    width: 100px;
+    height: 100px;
+    justify-self: left;
+    transition: 0.3s; }
+  header #LogoHeader:hover {
+    transform: scale(110%); }
+
+/* Fin Header */
+/* Comeinzo Main */
+main {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  position: relative; }
+  main img {
+    display: block;
+    margin: auto;
+    align-content: center; }
+  main #IndexLista {
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    list-style: none;
+    margin-top: 50px;
+    margin: auto; }
+  main li {
+    color: white;
+    margin-top: 20px; }
+  main h2 {
+    text-align: center; }
+  main a {
+    text-decoration: none; }
+
+/* Fin Main */
+/* Comienzo Main (Nuestros trabajos) */
+.GrillaTrabajos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". siriusPrincipal siriusPrincipal ." "Birra Trago Comida CartelFuera";
+  justify-items: center;
+  column-gap: 5px;
+  row-gap: 15px;
+  background-color: black; }
+  .GrillaTrabajos #Grilla {
+    width: 100%;
+    height: auto;
+    border: solid 2px white; }
+  .GrillaTrabajos .Birra {
+    grid-area: Birra; }
+  .GrillaTrabajos .CartelDentro {
+    grid-area: siriusPrincipal; }
+  .GrillaTrabajos .CartelFuera {
+    grid-area: CartelFuera; }
+  .GrillaTrabajos .Comida {
+    grid-area: Comida; }
+  .GrillaTrabajos .Trago {
+    grid-area: Trago; }
+  .GrillaTrabajos .Birra:hover, .GrillaTrabajos .CartelDentro:hover, .GrillaTrabajos .CartelFuera:hover, .GrillaTrabajos .Comida:hover, .GrillaTrabajos .Trago:hover {
+    transform: scale(110%);
+    transition: 0.5s; }
+
+/* Fin Main (Nuestros trabajos) */
+/* Comienzo Main (Servicios) */
+li {
+  color: white;
+  text-align: center;
+  margin: auto; }
+
+ul {
+  list-style: none;
+  font-size: 15px; }
+
+/* Fin Main (Servicios) */
+/* Comienzo Main (Sobre Nosotros) */
+th {
+  color: white;
+  text-align: center; }
+
+td {
+  text-align: center;
+  color: white; }
+
+#Fotografo {
+  height: 400px;
+  width: 400px;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+table {
+  margin: auto;
+  align-content: center; }
+
+p {
+  margin: 0 !important; }
+
+/* Fin Main (Sobre Nosotros) */
+/* Comienzo Main (Contactanos) */
+form {
+  text-align: center;
+  margin: auto; }
+
+textarea {
+  background-color: black;
+  border: solid 2px white;
+  color: white; }
+
+fieldset {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  border: solid 2px white; }
+
+select {
+  color: white;
+  background-color: black;
+  border: solid 2px white; }
+
+input {
+  color: white; }
+
+#Contraseña, #Nombre, #enviar, #reset {
+  color: white;
+  background-color: black;
+  border: solid 2px white; }
+
+/* Comeinzo Footer */
+footer {
+  background-color: black;
+  height: 150px; }
+
+/* Fin Footer */
+/* Comienzo BEM */
+.Texto--XS {
+  font-size: 5px; }
+
+.Texto--S {
+  font-size: 15px; }
+
+.Texto--M {
+  font-size: 20px; }
+
+.Texto--L {
+  font-size: 30px; }
+
+.Texto--XL {
+  font-size: 40px; }
+
+.Texto--XXL {
+  font-size: 50px; }
+
+.Texto--Center {
+  text-align: center; }
+
+.Texto--End {
+  text-align: end; }
+
+.Texto--Start {
+  text-align: start; }
+
+.Texto--NoDec {
+  text-decoration: none; }
+
+.Texto--ColorFuente {
+  color: white; }
