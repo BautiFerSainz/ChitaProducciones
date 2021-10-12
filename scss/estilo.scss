@@ -68,7 +68,7 @@ main{
                             "Birra Trago Comida CartelFuera";
     justify-items: center;
     column-gap: 5px;
-    row-gap: 15px   ;
+    row-gap: 5px ;
     background-color: $ColorFondo;
     
     #Grilla{
@@ -176,6 +176,21 @@ footer{
     background-color: $ColorFondo;
     height: 150px;
 }
+.redes{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    margin: 0 5px 0 5px;
+}
+.Whatsapp{
+    background-image: url(../Images/Logo/Whatsapp.png);
+}
+.Instagram{
+    background-image: url(../Images/Logo/Instagram.png);
+}
+.TikTok{
+    background-image: url(../Images/Logo/TikTok.png);
+}
 /* Fin Footer */
 
 
@@ -220,4 +235,22 @@ footer{
     }
 }
 
+/*Comienzo media querie*/
+@media only screen and (max-width: 992px){
 
+    #Fotografo{
+        height: 300px;
+        width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    #Fotografo{
+        height: 200px;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
